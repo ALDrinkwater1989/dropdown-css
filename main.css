@@ -13,7 +13,7 @@ button{
     height: 50px;
     color: #fff;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: pointer; /*This turns the mouse pointer into a hand icon to indicate that the button is interactable*/
 }
 
 .DropDownMenu{
@@ -23,11 +23,11 @@ button{
     position: absolute;
     left:0;
     right: 0;
-    z-index: -1;
+    z-index: -1; /* this puts the whole list menu underneath everything else on the page. so it cannot be seen when we are not hovering over the button, without this the list would be over the top of the button.*/
     width: 150px;
     top: 50px;
     text-align: center;
-   box-shadow: -15px -25px 90px 20px rgba(0,0,0,0.75);
+   box-shadow: -15px -25px 90px 20px rgba(0,0,0,0.75); /*this controls the shadow behind the dropdown list*/
    transform: translateY(-100%);
    transition: transform .5s ease-in;
    
@@ -43,7 +43,7 @@ button{
     
 }
 
-.dropDownLink:hover{
+.dropDownLink:hover{/*inverts the font colour and changes the background color of each list item when it is hovered over*/
     color: #fff;
     background-color: #4a4a4f;
 }
@@ -55,11 +55,11 @@ button{
 }
 
 .DropDown:hover button{
-    background-color: #018ec5;
+    background-color: #018ec5/*Subtly changes the colour of the button backgroun when we hover over it*/
   
 }
 
-.DropDown:hover .DropDownMenu{
+.DropDown:hover .DropDownMenu{ /*this moves the list from where it is sat above the page to where we want it, just under the button*/
     
       transform: translateY(0);
 }
