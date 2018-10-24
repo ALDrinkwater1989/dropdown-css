@@ -1,0 +1,65 @@
+.navDefault{
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    background-color: #4a4a4f;
+}
+
+button{
+    border: none;
+    background-color: #0997d3;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.DropDownMenu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left:0;
+    right: 0;
+    z-index: -1;
+    width: 150px;
+    top: 50px;
+    text-align: center;
+   box-shadow: -15px -25px 90px 20px rgba(0,0,0,0.75);
+   transform: translateY(-100%);
+   transition: transform .5s ease-in;
+   
+}
+
+.dropDownLink{
+    text-decoration: none;
+    display: block;
+    background-color: #f9f9f9;
+    color: #4a4a4f;
+    padding: 10px 5px;
+    transition: background-color .5s ease-in-out,  .5s ease-in-out;
+    
+}
+
+.dropDownLink:hover{
+    color: #fff;
+    background-color: #4a4a4f;
+}
+
+.DropDown{
+    width: 150px;
+    position: relative;
+    
+}
+
+.DropDown:hover button{
+    background-color: #018ec5;
+  
+}
+
+.DropDown:hover .DropDownMenu{
+    
+      transform: translateY(0);
+}
